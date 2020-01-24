@@ -1,9 +1,11 @@
 
 
-let x = 5;
+let x = 5, X=10;
+const  s= 100;
+
 function op(){
     x+=5;
 
 }
-op()
-console.log(x)
+
+console.log(s)

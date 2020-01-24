@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <script type="text/javascript">
+        function sum() {
+
+            let a = 10;
+            let v = 20;
+            alert("cae" + (a + v))
+
+        }
+        function sum2(x, y) {
+
+            var cc = x + y;
+            document.getElementById("p1").innerHTML = cc;
+
+        }
+        function sumall() {
+
+            var oo;
+            for (var i = 0; i < arguments.length; i++) {
+                oo += arguments[i];
+            }
+            document.getElementById("p1").innerHTML = oo;
+
+        }
+
+
+        for (let v = 0; v < 10; v++) {
+            if (v % 2 == 0) {
+                document.write("AA<br>")
+            } else {
+                document.write("<i><font color='blue'>AA<br></font></i>")
+            }
+        }
+
+        function summm() {
+            var tt=0;
+            while (sd != 0) {
+                var sd = prompt("number :: ");
+                tt += parseFloat(sd);
+                document.getElementById("h1").innerHTML ="scoure :: "+tt;
+            }
+        }
+
+        function opop(){
+            var asd=0;
+            do{
+             var rrr=prompt("imput :: 00");
+             asd += parseFloat(rrr);
+             document.getElementById("h1").innerHTML ="scoure :: "+asd;
+            }while(rrr !=0)
+            
+
+        }
+
+    </script>
+</head>
+
+<body>
+   
+    <p id="p1">dasdasdasdadadasd</p>
+    <button onclick="sum2(100,20)">car</button>
+    <input type="button" value="ckil" onclick="sumall(20,35,52,62)" />
+    <input type="button" value="sum e dok " onclick=" opop()"/>
+
+    <hr>
+    <h1 id="h1" style="color: brown;">scoure :: 0</h1>
+   
+</body>
+
+</html>
